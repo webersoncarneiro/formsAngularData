@@ -1,16 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { EventEmitter, NgModule, Output , } from '@angular/core';
+import {  } from 'ngx-bootstrap/tooltip';
 
 import { AppComponent } from './app.component';
+
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+  //  TooltipModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+  @Output()  somename = new EventEmitter();
+
+}
