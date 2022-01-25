@@ -18,6 +18,7 @@ import { AppComponent } from './app.component';
 })
 export class AppModule { 
 
+  status :  any [];
   @Output()  somename = new EventEmitter();
 
 }
